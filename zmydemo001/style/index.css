@@ -1,0 +1,158 @@
+/* start 重置边距样式*/
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/*start 每页的基础样式*/
+.item {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.item-1 {
+    background: #048599;
+}
+
+.item-2 {
+    background: #349b66;
+}
+
+.item-3 {
+    background: #e05365;
+}
+
+.item-4 {
+    background: #44a7cb;
+}
+
+.item-5 {
+    background: #fc9590;
+}
+
+.item-6 {
+    background: #d487b4;
+}
+
+.item-7 {
+    background: #f3f1bb url(img/item_7_bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.item-8 {
+    background: #f3d2ac;
+}
+
+/*end 每页的基础样式*/
+
+/*start 箭头指示器*/
+.icon-arrow {
+    position: fixed;
+    bottom: 5px;
+    width: 18px;
+    height: 18px;
+    background-image: url("./images/icon-arrow.png");
+    background-repeat: no-repeat;
+    left: 50%;
+    right: 50%;
+    background-size: contain;
+    margin-left: -9px;
+    -webkit-animation: slide_up 2s infinite ease-out;
+}
+
+/*start 每页的公共样式*/
+.title {
+    display: block;
+    padding: 5px 0;
+    margin: 5px 30px 0;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 20px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+}
+
+.item.play .title {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 1s 0.3s ease-out;
+}
+
+.icon_1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+}
+
+.item.play .icon_1 {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 1s 0.6s ease-out;
+}
+
+.icon_2 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+}
+
+.item.play .icon_2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 1s 0.9s ease-out;
+}
+
+.net1-title {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 0;
+    font-size: 12px;
+    -webkit-transform: translate3d(0, 80px, 0);
+}
+
+.item.play .net1-title {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 1s 0.3s ease-out;
+}
+
+.net1-desc1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+}
+
+.item.play .net1-desc1 {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 1s 0.6s ease-out;
+}
+
+.end {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+
+}
+
+.end1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: center;
+}
